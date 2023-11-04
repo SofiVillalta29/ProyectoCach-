@@ -50,7 +50,7 @@ def main():
 
         hits, misses = 0, 0 #inicaliza la cantidad de hits o misses
 
-        with open("test.out", 'r') as file:
+        with open("trace.out", 'r') as file:
             for line in file:
                 if line.startswith('#'):  # Sólo procesar las líneas que comienzan con '#'
                     parts = line.strip().split()
