@@ -55,7 +55,7 @@ def main():
                 if line.startswith('#'):  # Sólo procesar las líneas que comienzan con '#'
                     parts = line.strip().split()
                     LS, address, IC = int(parts[1]), parts[2], int(parts[3])
-                    if cache.access(address):  # Esta línea y las siguientes deben estar dentro del if
+                    if cache.access(address):  
                         hits += 1
                     else:
                         misses += 1
